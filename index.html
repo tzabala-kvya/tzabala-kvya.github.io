@@ -5,37 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tristan Zabala — Mechanical Engineer</title>
 
-  <!-- 
-    ╔══════════════════════════════════════════════════════════════╗
-    ║  MECHANICAL ENGINEERING PORTFOLIO — GITHUB PAGES TEMPLATE   ║
-    ║  Theme: Forest & Sand (warm light background + green accent)║
-    ║                                                              ║
-    ║  HOW TO CUSTOMIZE:                                           ║
-    ║  1. Search for "CHANGE:" comments throughout this file       ║
-    ║  2. Replace placeholder text with your own info              ║
-    ║  3. Replace placeholder images with your own photos          ║
-    ║  4. Add/remove project cards by copying the template         ║
-    ║                                                              ║
-    ║  Every section you need to edit is marked clearly.           ║
-    ╚══════════════════════════════════════════════════════════════╝
-  -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
   <style>
-    /* ================================================================
-       FOREST & SAND THEME
-       Warm linen backgrounds + deep olive green accents.
-       
-       To tweak the green, swap --accent below:
-         #4A6741 = olive green (current)
-         #3D5A3E = darker forest
-         #5C7A52 = lighter sage
-         #2F4A2F = deep evergreen
-       ================================================================ */
-
     :root {
       --accent: #4A6741;
       --accent-dim: #4A674118;
@@ -124,7 +98,6 @@
       margin-bottom: var(--space-md);
     }
 
-    /* Paper grain texture */
     body::before {
       content: '';
       position: fixed;
@@ -134,7 +107,6 @@
       z-index: 9999;
     }
 
-    /* ── NAVIGATION ────────────────────────────────────── */
     .nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -203,7 +175,6 @@
       transition: 0.3s;
     }
 
-    /* ── HERO ──────────────────────────────────────────── */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -254,7 +225,7 @@
     .hero-desc {
       font-size: 1.15rem;
       color: var(--text-secondary);
-      max-width: 540px;
+      max-width: 560px;
       line-height: 1.8;
       margin-bottom: var(--space-lg);
       opacity: 0;
@@ -300,7 +271,6 @@
       color: white;
     }
 
-    /* ── ABOUT ─────────────────────────────────────────── */
     .about {
       padding: var(--space-xl) 0;
       border-top: 1px solid var(--border);
@@ -368,7 +338,6 @@
       margin-top: 0.5rem;
     }
 
-    /* ── PROJECTS ──────────────────────────────────────── */
     .projects {
       padding: var(--space-xl) 0;
       border-top: 1px solid var(--border);
@@ -463,7 +432,6 @@
     .project-link svg { transition: transform 0.3s; }
     .project-link:hover svg { transform: translateX(4px); }
 
-    /* ── SKILLS ────────────────────────────────────────── */
     .skills {
       padding: var(--space-xl) 0;
       border-top: 1px solid var(--border);
@@ -505,7 +473,6 @@
     .skill-list li:last-child { border-bottom: none; }
     .skill-list li:hover { color: var(--text-primary); }
 
-    /* ── EXPERIENCE ────────────────────────────────────── */
     .experience {
       padding: var(--space-xl) 0;
       border-top: 1px solid var(--border);
@@ -554,7 +521,6 @@
       font-size: 0.95rem;
     }
 
-    /* ── CONTACT ───────────────────────────────────────── */
     .contact {
       padding: var(--space-xl) 0 var(--space-2xl);
       border-top: 1px solid var(--border);
@@ -572,7 +538,7 @@
       font-size: clamp(2.5rem, 5vw, 4.5rem);
       font-weight: 400;
       line-height: 1.15;
-      max-width: 600px;
+      max-width: 640px;
     }
     .contact-big-text em { font-style: italic; color: var(--accent); }
 
@@ -594,7 +560,6 @@
     }
     .contact-link:hover { color: var(--text-primary); opacity: 1; }
 
-    /* ── FOOTER ────────────────────────────────────────── */
     .footer {
       padding: var(--space-md) 0;
       border-top: 1px solid var(--border);
@@ -611,7 +576,6 @@
       letter-spacing: 0.05em;
     }
 
-    /* ── ANIMATIONS ────────────────────────────────────── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to { opacity: 1; transform: translateY(0); }
@@ -625,7 +589,6 @@
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── RESPONSIVE ────────────────────────────────────── */
     @media (max-width: 900px) {
       .about-grid { grid-template-columns: 1fr; }
       .about-image-wrapper { max-width: 350px; }
@@ -664,7 +627,6 @@
   <!-- NAVIGATION -->
   <nav class="nav">
     <div class="container">
-      <!-- CHANGE: Your name or initials -->
       <a href="#" class="nav-logo"><span>&gt;</span> Tristan Zabala</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
@@ -683,22 +645,19 @@
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="container hero-content">
-      <!-- CHANGE: Your degree / subtitle -->
-      <p class="hero-eyebrow">Mechanical Engineering · Class of 2026</p>
+      <p class="hero-eyebrow">Mechanical Engineering · UC Irvine · June 2026</p>
 
-      <!-- CHANGE: Your name. Wrap one word in <em> for accent color. -->
       <h1 class="hero-name">Tristan<br><em>Zabala</em></h1>
 
-      <!-- CHANGE: 1-2 specific sentences about what you do. -->
       <p class="hero-desc">
-        Mechanical engineering student focused on robotics and control systems.
-        I design, build, and test physical systems — from concept sketches
-        to working prototypes. Currently seeking summer 2026 internships.
+        Senior ME at UC Irvine, graduating June 2026. My current project is my capstone, a hybrid energy
+        storage, aimed as a proof of concept for swapping grid-scale batteries for compressed air
+        and pumped hydro on a shared shaft. Looking for design engineering
+        roles in renewables and storage.
       </p>
 
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View Projects</a>
-        <!-- CHANGE: Link to your resume PDF uploaded to this repo -->
         <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
       </div>
     </div>
@@ -710,48 +669,51 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image-wrapper reveal">
-          <!-- CHANGE: Replace src with your own photo: images/headshot.jpg -->
+          <!-- Replace src with your own photo: images/headshot.jpg -->
           <img
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=800&fit=crop"
-            alt="Your Name working in the lab"
+            alt="Tristan Zabala"
             class="about-image"
           >
         </div>
 
         <div class="about-text reveal">
           <div class="section-label">About</div>
-          <!-- CHANGE: Your personal tagline -->
-          <h2 class="section-title">Specialization in Energy Design & Environmental Engineering</h2>
+          <h2 class="section-title">Mechanical design, embedded controls, and one published paper.</h2>
 
-          <!-- CHANGE: 2-3 paragraphs about you -->
           <p>
-            I'm a new graduate from University of California Irvine
+            Finishing my BS in Mechanical Engineering at UC Irvine with an
+            Energy Systems focus. Graduating June 2026. I do the usual
+            mechanical stuff — CAD, FEA, drawings — but I'm most useful
+            when the project also needs embedded controls: sensor integration,
+            PID tuning, closed-loop testing.
           </p>
           <p>
-            What drives me is the full loop: identifying a problem, sketching
-            concepts, running the analysis, machining the parts, writing the
-            firmware, and testing until it works. I've applied this across
-            projects ranging from autonomous vehicles to custom test fixtures.
+            The work I've done so far includes a 220 N·m electric FSAE
+            drivetrain, a peer-reviewed stormwater biofiltration paper, a
+            WWI airplane fuselage rebuild in SolidWorks, and a senior
+            capstone replacing grid-scale batteries with hybrid CAES and
+            pumped hydro. Different domains, same pattern: analyze, build,
+            test, fix what the analysis missed.
           </p>
           <p>
-            Outside the lab, I'm involved in [club/team name] and enjoy
-            [hobby]. I'm currently looking for summer 2027 opportunities
-            in robotics, product design, or R&D.
+            Targeting design engineering roles in renewables, solar, and
+            energy storage. Outside of school: coastal foraging, fishing,
+            and whatever side project I've talked myself into that week.
           </p>
 
-          <!-- CHANGE: Your real numbers, or remove this block -->
           <div class="about-stats">
             <div>
-              <div class="stat-number">6+</div>
-              <div class="stat-label">Projects Built</div>
+              <div class="stat-number">4</div>
+              <div class="stat-label">Major Projects</div>
             </div>
             <div>
-              <div class="stat-number">2</div>
-              <div class="stat-label">Internships</div>
+              <div class="stat-number">1</div>
+              <div class="stat-label">Published Paper</div>
             </div>
             <div>
-              <div class="stat-number">3</div>
-              <div class="stat-label">Competition Wins</div>
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Years Research</div>
             </div>
           </div>
         </div>
@@ -760,101 +722,116 @@
   </section>
 
 
-  <!-- PROJECTS — Copy a project-card block to add more, delete to remove -->
+  <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
       <div class="section-label reveal">Selected Work</div>
-      <h2 class="section-title reveal">Projects I've built.</h2>
+      <h2 class="section-title reveal">Things I've built.</h2>
 
       <div class="projects-grid">
 
-        <!-- PROJECT 1 — CHANGE: everything below -->
+        <!-- PROJECT 1: CAPSTONE -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=800&h=500&fit=crop" alt="Project 1" class="project-image">
+            <!-- Replace with photo/render of prototype or CAD assembly -->
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=500&fit=crop" alt="Hybrid mechanical energy storage prototype" class="project-image">
           </div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="project-tag">SolidWorks</span>
-              <span class="project-tag">Arduino</span>
+              <span class="project-tag">Energy Storage</span>
               <span class="project-tag">PID Control</span>
-            </div>
-            <h3 class="project-title">Autonomous Line-Following Robot</h3>
-            <p class="project-desc">
-              Designed and built a differential-drive robot with IR sensor array
-              for a class competition. Implemented PID control in C++ for smooth
-              line tracking. Placed 2nd out of 24 teams with a course time of 14.3s.
-            </p>
-            <a href="https://github.com/yourusername/project-repo" class="project-link">
-              View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- PROJECT 2 — CHANGE: everything below -->
-        <div class="project-card reveal">
-          <div class="project-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=500&fit=crop" alt="Project 2" class="project-image">
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
+              <span class="project-tag">Arduino</span>
               <span class="project-tag">MATLAB</span>
-              <span class="project-tag">FEA</span>
-              <span class="project-tag">3D Printing</span>
             </div>
-            <h3 class="project-title">Topology-Optimized Bracket</h3>
+            <h3 class="project-title">Hybrid Mechanical Energy Storage System</h3>
             <p class="project-desc">
-              Used MATLAB topology optimization to redesign a suspension bracket,
-              reducing mass by 34% while maintaining a safety factor of 2.1.
-              Validated with ANSYS FEA and manufactured via SLA printing.
+              Senior capstone replacing electrochemical batteries with a hybrid
+              CAES and pumped hydro system on a shared 12V alternator shaft.
+              As Controls Lead, I built the PID voltage regulation on Arduino —
+              holding 12V within 5% through step-change loads — using Hall
+              effect current sensors and voltage dividers for closed-loop feedback.
             </p>
-            <a href="https://github.com/yourusername/project-repo" class="project-link">
+            <a href="projects/capstone.html" class="project-link">
               View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </div>
         </div>
 
-        <!-- PROJECT 3 — CHANGE: everything below -->
+        <!-- PROJECT 2: FSAE -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop" alt="Project 3" class="project-image">
+            <!-- Replace with FSAE powertrain photo or CAD render -->
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=500&fit=crop" alt="FSAE electric powertrain" class="project-image">
           </div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="project-tag">Sensor Integration</span>
-              <span class="project-tag">PCB Design</span>
-              <span class="project-tag">C++</span>
-            </div>
-            <h3 class="project-title">Environmental Monitoring Station</h3>
-            <p class="project-desc">
-              Built a solar-powered weather station with pressure, temperature,
-              and humidity sensors. Designed a custom PCB and waterproof enclosure.
-              Deployed on campus for 6+ months of continuous data collection.
-            </p>
-            <a href="https://github.com/yourusername/project-repo" class="project-link">
-              View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- PROJECT 4 — CHANGE: everything below -->
-        <div class="project-card reveal">
-          <div class="project-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=500&fit=crop" alt="Project 4" class="project-image">
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="project-tag">GD&T</span>
-              <span class="project-tag">CNC Machining</span>
               <span class="project-tag">SolidWorks</span>
+              <span class="project-tag">ANSYS FEA</span>
+              <span class="project-tag">GD&amp;T</span>
+              <span class="project-tag">DFM</span>
             </div>
-            <h3 class="project-title">Stirling Engine Design & Build</h3>
+            <h3 class="project-title">FSAE Electric Powertrain</h3>
             <p class="project-desc">
-              Designed a low-temperature-differential Stirling engine from scratch.
-              Full engineering drawings with GD&T. Machined all components on
-              manual lathe and mill. Ran at 1.5 PSI minimum input pressure.
+              Designed motor and differential mounts for a 220 N·m electric
+              drivetrain in SolidWorks, validated to &gt;1.5× safety factor
+              through ANSYS stress, torque, and vibratory analysis. Selected
+              a 3.3:1 final drive ratio for slip-limited acceleration within
+              packaging constraints. Applied GD&amp;T for outsourced fabrication,
+              then validated the assembled mounts on a welded test bench.
             </p>
-            <a href="https://github.com/yourusername/project-repo" class="project-link">
+            <a href="projects/fsae.html" class="project-link">
+              View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: SCCWRP Rainfall Simulator -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <!-- Replace with photo of the rainfall simulator rig -->
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=500&fit=crop" alt="Mobile rainfall simulation system" class="project-image">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Sensor Systems</span>
+              <span class="project-tag">R Analytics</span>
+              <span class="project-tag">Field Testing</span>
+            </div>
+            <h3 class="project-title">Mobile Rainfall Simulator &amp; Analytics Pipeline</h3>
+            <p class="project-desc">
+              Engineered a mobile rainfall simulator at SCCWRP that hit a 0.87
+              uniformity coefficient across soil, pavement, grass, and turf.
+              Built an R pipeline that cut a 30-sensor storm-event setup down
+              to 3 sensors without losing signal fidelity. Co-author on a
+              peer-reviewed paper in ES&amp;T Water (2025).
+            </p>
+            <a href="projects/sccwrp.html" class="project-link">
+              View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: JN-4 Airplane -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <!-- Replace with a SolidWorks render of the fuselage -->
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop" alt="JN-4 fuselage CAD reconstruction" class="project-image">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">SolidWorks</span>
+              <span class="project-tag">Reverse Engineering</span>
+              <span class="project-tag">Technical Drawing</span>
+            </div>
+            <h3 class="project-title">Curtiss JN-4 Fuselage Reconstruction</h3>
+            <p class="project-desc">
+              Engineered fuselage components in SolidWorks for a Curtiss JN-4
+              restoration at the Flying Leatherneck Aviation Museum. Built a
+              full digital assembly that drove both in-house wood fabrication
+              and outsourced metalwork. Indexed 3,000+ archival blueprints
+              across 20 contributors with a standardized naming system.
+            </p>
+            <a href="projects/jn4.html" class="project-link">
               View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </div>
@@ -865,43 +842,43 @@
   </section>
 
 
-  <!-- SKILLS — CHANGE: Only list skills you can back up -->
+  <!-- SKILLS -->
   <section class="skills" id="skills">
     <div class="container">
       <div class="section-label reveal">Capabilities</div>
-      <h2 class="section-title reveal">What I work with.</h2>
+      <h2 class="section-title reveal">Tools I actually use.</h2>
 
       <div class="skills-grid">
         <div class="skill-group reveal">
-          <div class="skill-group-title">Design & CAD</div>
+          <div class="skill-group-title">Design &amp; Analysis</div>
           <ul class="skill-list">
-            <li>SolidWorks (CSWA Certified)</li>
-            <li>Fusion 360</li>
-            <li>ANSYS Mechanical</li>
-            <li>Engineering Drawings & GD&T</li>
-            <li>Tolerance Analysis</li>
+            <li>SolidWorks</li>
+            <li>ANSYS FEA</li>
+            <li>AutoCAD</li>
+            <li>GD&amp;T &amp; Tolerance Stack-Up</li>
+            <li>DFM for Outsourced Fabrication</li>
           </ul>
         </div>
 
         <div class="skill-group reveal">
-          <div class="skill-group-title">Manufacturing</div>
+          <div class="skill-group-title">Hardware &amp; Shop</div>
           <ul class="skill-list">
-            <li>Manual Mill & Lathe</li>
-            <li>FDM & SLA 3D Printing</li>
+            <li>Welding</li>
+            <li>Soldering &amp; Sensor Integration</li>
+            <li>3D Printing</li>
             <li>Laser Cutting</li>
-            <li>Soldering & PCB Assembly</li>
-            <li>Composite Layup</li>
+            <li>Bench Testing &amp; DAQ Setup</li>
           </ul>
         </div>
 
         <div class="skill-group reveal">
-          <div class="skill-group-title">Software & Analysis</div>
+          <div class="skill-group-title">Software &amp; Controls</div>
           <ul class="skill-list">
-            <li>MATLAB / Simulink</li>
-            <li>Arduino / C++</li>
-            <li>Python (NumPy, Pandas)</li>
-            <li>LabVIEW</li>
-            <li>Git & GitHub</li>
+            <li>MATLAB</li>
+            <li>Arduino</li>
+            <li>PID Control</li>
+            <li>R (data analysis)</li>
+            <li>Excel (data modeling)</li>
           </ul>
         </div>
       </div>
@@ -909,74 +886,83 @@
   </section>
 
 
-  <!-- EXPERIENCE — Copy a timeline-item to add more -->
+  <!-- EXPERIENCE -->
   <section class="experience" id="experience">
     <div class="container">
       <div class="section-label reveal">Experience</div>
       <h2 class="section-title reveal">Where I've worked.</h2>
 
       <div class="timeline">
-        <!-- CHANGE: Your real experience -->
+
         <div class="timeline-item reveal">
-          <div class="timeline-date">Jun — Aug 2026</div>
+          <div class="timeline-date">Apr 2025 — Dec 2025</div>
           <div class="timeline-content">
-            <h3>Company Name</h3>
-            <div class="role">Mechanical Engineering Intern</div>
+            <h3>Flying Leatherneck Aviation Museum</h3>
+            <div class="role">Fuselage Engineer — JN-4 Restoration</div>
             <p>
-              Describe what you actually did — specific problems you solved
-              and results you achieved. Use numbers where possible.
+              Engineered fuselage components in SolidWorks for a Curtiss JN-4
+              restoration, producing a full digital assembly that guided both
+              in-house wood fabrication and outsourced metalwork. Led the
+              digitization and indexing of 3,000+ archival blueprints across
+              20 contributors with standardized naming conventions.
             </p>
           </div>
         </div>
 
         <div class="timeline-item reveal">
-          <div class="timeline-date">Sep 2025 — Present</div>
+          <div class="timeline-date">Dec 2023 — Dec 2025</div>
           <div class="timeline-content">
-            <h3>FSAE Racing Team</h3>
-            <div class="role">Suspension Lead</div>
+            <h3>Southern California Coastal Water Research Project</h3>
+            <div class="role">Research Lab Assistant</div>
             <p>
-              Led a sub-team of 4 engineers designing the front suspension
-              geometry for the 2026 competition vehicle. Ran ADAMS simulations
-              to optimize camber gain through 2" of travel.
+              Built an R analytics pipeline that cut a 30-sensor stormwater
+              setup down to 3 representative sensors without losing signal.
+              Engineered a mobile rainfall simulator (0.87 uniformity
+              coefficient) testing runoff across soil, pavement, grass, and
+              turf. Analyzed copper and PFAS/PFOA breakthrough curves informing
+              BMP media selection. Co-author, ES&amp;T Water (2025).
             </p>
           </div>
         </div>
 
         <div class="timeline-item reveal">
-          <div class="timeline-date">Jan — May 2025</div>
+          <div class="timeline-date">Jun 2022 — Aug 2024</div>
           <div class="timeline-content">
-            <h3>University Research Lab</h3>
-            <div class="role">Undergraduate Research Assistant</div>
+            <h3>UCI Housing Sustainability</h3>
+            <div class="role">Sustainability Program Coordinator</div>
             <p>
-              Assisted with experimental setup for thermal conductivity
-              measurements. Built a custom DAQ interface using Arduino
-              and thermocouples for real-time temperature logging.
+              Ran a quarterly applied-sustainability course and a weekly
+              volunteer program with 60+ participants, producing 300 lbs of
+              food per quarter on an on-campus farm. Secured $15K in program
+              funding. Designed an automated irrigation system using Rain Bird
+              controllers and solenoid valves for the greenhouse and outdoor plots.
             </p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
 
-  <!-- CONTACT — CHANGE: Your real links -->
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-label reveal">Get In Touch</div>
       <div class="contact-content reveal">
         <h2 class="contact-big-text">
-          Let's build<br>something <em>together.</em>
+          Looking for work in<br>renewables and <em>storage.</em>
         </h2>
         <div class="contact-links">
-          <a href="mailto:your.email@university.edu" class="contact-link">
+          <a href="mailto:Tristan.N.Zabala@gmail.com" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-            your.email@university.edu
+            Tristan.N.Zabala@gmail.com
           </a>
-          <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+          <a href="https://linkedin.com/in/tristan-zabala" class="contact-link" target="_blank">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
             LinkedIn
           </a>
-          <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+          <a href="https://github.com/tzabala-kvya" class="contact-link" target="_blank">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
             GitHub
           </a>
@@ -985,15 +971,13 @@
     </div>
   </section>
 
-  <!-- FOOTER — CHANGE: Your name -->
   <footer class="footer">
     <div class="container">
-      <span class="footer-text">&copy; 2026 Your Name</span>
-      <span class="footer-text">Built with purpose.</span>
+      <span class="footer-text">&copy; 2026 Tristan Zabala</span>
+      <span class="footer-text">Made in Irvine, CA.</span>
     </div>
   </footer>
 
-  <!-- JAVASCRIPT — You don't need to edit this -->
   <script>
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
