@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtiss JN-4 Fuselage — Tristan Zabala</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to portfolio
+      </a>
+      <a href="../index.html" class="nav-logo"><span>&gt;</span> tristan_zabala</a>
+    </div>
+  </nav>
+
+
+  <section class="project-hero">
+    <div class="container-narrow">
+      <div class="project-tags">
+        <span class="project-tag">SolidWorks</span>
+        <span class="project-tag">Reverse Engineering</span>
+        <span class="project-tag">Technical Drawing</span>
+        <span class="project-tag">Aviation Heritage</span>
+      </div>
+
+      <h1 class="project-title">Curtiss JN-4 <em>Fuselage</em></h1>
+
+      <p class="project-summary">
+        Rebuilt a WWI-era aircraft fuselage in SolidWorks from incomplete
+        archival drawings, producing a digital assembly that drives both
+        in-house woodworking and outsourced metalwork.
+      </p>
+    </div>
+
+    <div class="container-narrow">
+      <div class="hero-image-wrapper">
+        <!-- CHANGE: Replace with a SolidWorks render of the fuselage,
+             a photo of the archival drawings, or the museum's JN-4. -->
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=675&fit=crop"
+          alt="JN-4 fuselage CAD reconstruction"
+          class="hero-image"
+        >
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-narrow">
+    <div class="info-strip">
+      <div class="info-strip-grid">
+        <div>
+          <div class="info-item-label">Duration</div>
+          <div class="info-item-value">Apr 2025</div>
+          <div class="info-item-sub">— Dec 2025 (9 months)</div>
+        </div>
+        <div>
+          <div class="info-item-label">My Role</div>
+          <div class="info-item-value">Fuselage Engineer</div>
+          <div class="info-item-sub">CAD lead, blueprint indexing</div>
+        </div>
+        <div>
+          <div class="info-item-label">Team</div>
+          <div class="info-item-value">20 contributors</div>
+          <div class="info-item-sub">Volunteer restoration team</div>
+        </div>
+        <div>
+          <div class="info-item-label">Client</div>
+          <div class="info-item-value">Flying Leatherneck</div>
+          <div class="info-item-sub">Aviation Museum</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Overview</div>
+      <h2 class="section-title">Restoring a 100-year-old trainer.</h2>
+
+      <div class="section-body">
+        <p class="lead">
+          The Curtiss JN-4 "Jenny" is one of the most historically significant
+          American aircraft — the trainer most WWI pilots learned to fly on.
+          The Flying Leatherneck Aviation Museum is restoring one to exhibit
+          condition.
+        </p>
+        <p>
+          The challenge: the surviving archival drawings are incomplete,
+          inconsistently scaled, and reference tolerances that don't exist
+          on modern drawings. To rebuild the fuselage, the museum needed
+          modern fabrication-ready CAD models — not just reference drawings.
+        </p>
+        <p>
+          My role was to engineer fuselage components in SolidWorks, assemble
+          them into a full digital model, and organize the 3,000+ archival
+          blueprints that 20 contributors were working from across the project.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="background: var(--bg-card); margin: 0 -100vw; padding-left: 100vw; padding-right: 100vw;">
+    <div class="container-narrow">
+      <div class="section-label">My Contribution</div>
+      <h2 class="section-title">CAD and organization.</h2>
+
+      <div class="section-body">
+        <ul>
+          <li><strong>Fuselage component modeling.</strong> Built SolidWorks
+            models of fuselage components from legacy blueprints. Resolved
+            tolerance ambiguity and missing dimensions by cross-referencing
+            other drawings and physical reference parts where available.</li>
+          <li><strong>Digital assembly.</strong> Produced a complete fuselage
+            assembly that supports both in-house wood fabrication and
+            outsourced metal parts manufacturing — mating features and
+            interfaces are all tolerance-compatible.</li>
+          <li><strong>Blueprint digitization pipeline.</strong> Streamlined
+            the indexing of 3,000+ archival blueprints. Established a
+            standardized file naming convention across 20 contributors to
+            minimize search time and eliminate duplicate work.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Technical Highlights</div>
+      <h2 class="section-title">Key engineering decisions.</h2>
+
+      <div class="highlight-list">
+
+        <div class="highlight-card">
+          <span class="highlight-number">01</span>
+          <h3>Working from incomplete historical drawings</h3>
+          <p>
+            Pre-WWII engineering drawings don't use modern GD&amp;T and
+            often lack explicit tolerances. When a dimension was ambiguous,
+            the process was: check if it matters for function (does this
+            dimension affect fit?), find a mating drawing to triangulate,
+            or reference the physical part if available. Every modeling
+            decision was documented so other contributors could follow the
+            reasoning.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">02</span>
+          <h3>Assembly that bridges wood and metal workflows</h3>
+          <p>
+            The JN-4 uses a mix of wood structural members and steel
+            fittings. Wood gets fabricated in-house by museum volunteers;
+            metal parts go to outsourced machine shops. The CAD assembly
+            had to produce drawings that worked for both audiences — with
+            clearances sized to accommodate hand-fitting on the wood side
+            and precise machining on the metal side.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">03</span>
+          <h3>File naming for 20 contributors and 3,000+ drawings</h3>
+          <p>
+            When 20 people are indexing archival drawings, everyone invents
+            their own naming convention. That's how files get lost. I
+            established a standardized naming system (assembly-subassembly-
+            component-revision) and onboarded contributors to it. Search
+            time across the archive dropped dramatically and rework from
+            duplicate drawings stopped.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Impact</div>
+      <h2 class="section-title">What came out of the work.</h2>
+
+      <div class="stat-row">
+        <div>
+          <div class="stat-big">3,000+</div>
+          <div class="stat-caption">Archival blueprints digitized and indexed</div>
+        </div>
+        <div>
+          <div class="stat-big">20</div>
+          <div class="stat-caption">Contributors working on the project</div>
+        </div>
+        <div>
+          <div class="stat-big">1 assembly</div>
+          <div class="stat-caption">Complete fuselage model driving fabrication</div>
+        </div>
+      </div>
+
+      <div class="section-body">
+        <p>
+          The digital assembly is now the reference for ongoing fuselage
+          fabrication at the museum. The standardized blueprint archive
+          continues to be used by new contributors joining the project.
+        </p>
+      </div>
+
+      <!-- CHANGE: Add a SolidWorks render of the fuselage or a photo of
+           the actual museum aircraft / blueprint archive -->
+      <div class="image-single">
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=675&fit=crop"
+          alt="Fuselage CAD render or museum aircraft"
+        >
+      </div>
+      <div class="image-caption">Placeholder — replace with a SolidWorks render of the fuselage or a photo from the museum.</div>
+    </div>
+  </section>
+
+
+  <footer class="project-footer">
+    <div class="container-narrow">
+      <div class="project-footer-grid">
+        <a href="sccwrp.html" class="footer-prev">
+          <span class="footer-nav-label">← Previous</span>
+          <span class="footer-nav-title">Rainfall Simulator &amp; Analytics</span>
+        </a>
+        <a href="capstone.html" class="footer-next">
+          <span class="footer-nav-label">Next →</span>
+          <span class="footer-nav-title">Hybrid Mechanical Energy Storage</span>
+        </a>
+      </div>
+    </div>
+    <div class="back-to-all">
+      <a href="../index.html#projects">View all projects</a>
+    </div>
+  </footer>
+
+</body>
+</html>

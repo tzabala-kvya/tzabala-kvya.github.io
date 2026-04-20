@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hybrid Mechanical Energy Storage — Tristan Zabala</title>
+
+  <!-- ════════════════════════════════════════════════════════
+       PROJECT DETAIL PAGE — Hybrid Mechanical Energy Storage
+       Things to customize are marked CHANGE:
+       Main structure is locked in; you'll mostly edit paragraphs
+       and swap placeholder images for real ones.
+       ════════════════════════════════════════════════════════ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to portfolio
+      </a>
+      <a href="../index.html" class="nav-logo"><span>&gt;</span> tristan_zabala</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="project-hero">
+    <div class="container-narrow">
+      <div class="project-tags">
+        <span class="project-tag">Energy Storage</span>
+        <span class="project-tag">PID Control</span>
+        <span class="project-tag">Arduino</span>
+        <span class="project-tag">MATLAB</span>
+        <span class="project-tag">Senior Capstone</span>
+      </div>
+
+      <h1 class="project-title">Hybrid Mechanical <em>Energy Storage</em></h1>
+
+      <p class="project-summary">
+        A mechanical alternative to grid-scale batteries — compressed air
+        and pumped hydro coupled on a shared alternator shaft, controlled
+        in closed-loop for stable voltage under load.
+      </p>
+    </div>
+
+    <div class="container-narrow">
+      <div class="hero-image-wrapper">
+        <!-- CHANGE: Replace with a render or photo of the prototype or CAD assembly.
+             Good options: full system CAD render, control system breadboard,
+             or a photo of the 20ft water tank rig. 16:9 aspect ratio. -->
+        <img
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=675&fit=crop"
+          alt="Hybrid mechanical energy storage prototype"
+          class="hero-image"
+        >
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INFO STRIP -->
+  <section class="container-narrow">
+    <div class="info-strip">
+      <div class="info-strip-grid">
+        <div>
+          <div class="info-item-label">Duration</div>
+          <div class="info-item-value">Jan 2026</div>
+          <div class="info-item-sub">— May 2026 (2 quarters)</div>
+        </div>
+        <div>
+          <div class="info-item-label">My Role</div>
+          <div class="info-item-value">Controls Lead</div>
+          <div class="info-item-sub">Embedded controls &amp; testing</div>
+        </div>
+        <div>
+          <div class="info-item-label">Team</div>
+          <div class="info-item-value">6 engineers</div>
+          <div class="info-item-sub">PetrChu (UCI MAE)</div>
+        </div>
+        <div>
+          <div class="info-item-label">Tools</div>
+          <div class="info-item-value">Arduino</div>
+          <div class="info-item-sub">MATLAB, PID, Hall sensors</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Overview</div>
+      <h2 class="section-title">The problem with grid-scale batteries.</h2>
+
+      <div class="section-body">
+        <p class="lead">
+          Grid-scale energy storage is dominated by electrochemical batteries —
+          lithium-ion, mostly. They have real problems: rare-earth sourcing,
+          capacity degradation with every cycle, thermal runaway risk, and
+          end-of-life disposal issues.
+        </p>
+        <p>
+          Mechanical energy storage — compressed air (CAES) and pumped hydro
+          (PHS) — dodges most of that. Long cycle life, no chemistry to
+          degrade, conventional materials. But each has limitations on its
+          own: CAES has fast response but lower round-trip efficiency; PHS
+          has high efficiency but slow dynamics.
+        </p>
+        <p>
+          Our capstone is a sub-scale proof of concept that hybridizes the
+          two. Both subsystems share a single 12V alternator shaft through
+          overrunning clutches, with a PID controller managing RPM matching
+          and voltage stability. If it works at this scale, the architecture
+          scales up to grid-relevant sizes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MY CONTRIBUTION -->
+  <section class="section" style="background: var(--bg-card); margin: 0 -100vw; padding-left: 100vw; padding-right: 100vw;">
+    <div class="container-narrow">
+      <div class="section-label">My Contribution</div>
+      <h2 class="section-title">Controls Lead on a 6-person team.</h2>
+
+      <div class="section-body">
+        <p>
+          I lead the electrical and controls side of the project — everything
+          downstream of the mechanical shaft. That spans sensor selection and
+          integration, alternator characterization, PID development on Arduino,
+          and load-step testing.
+        </p>
+        <p>
+          The rest of the team handles mechanical design (shaft, clutches,
+          turbines), fluid systems (pressure vessels, hydraulics), and the
+          structural build of the 20 ft elevated water tank.
+        </p>
+
+        <!-- CHANGE: Edit the list below to reflect your specific deliverables -->
+        <ul>
+          <li><strong>Alternator characterization.</strong> Ran torque-current
+            analysis to size the drivetrain-generator coupling and inform PID
+            tuning parameters.</li>
+          <li><strong>PID voltage regulation.</strong> Built the Arduino-based
+            closed-loop controller targeting 12V output within 5% under
+            step-change loads.</li>
+          <li><strong>Sensor integration.</strong> Specified and wired Hall
+            effect current sensors and a voltage divider network for closed-loop
+            feedback. Added software bounds checking to prevent PID instability
+            from saturated ADC readings.</li>
+          <li><strong>Testing.</strong> Designed load-step test procedures and
+            instrumented the system for data collection during commissioning.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TECHNICAL HIGHLIGHTS -->
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Technical Highlights</div>
+      <h2 class="section-title">Key engineering decisions.</h2>
+
+      <div class="highlight-list">
+
+        <div class="highlight-card">
+          <span class="highlight-number">01</span>
+          <h3>Shared alternator shaft with overrunning clutches</h3>
+          <p>
+            Both turbines (air + water) drive the same 12V alternator through
+            independent overrunning clutches. This lets either subsystem generate
+            power solo — or both at once in torque-sharing mode — without needing
+            complex disengagement logic. The clutch handles the handoff mechanically.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">02</span>
+          <h3>PID tuning for dissimilar sources</h3>
+          <p>
+            CAES and PHS have very different response dynamics — pneumatic pressure
+            changes fast, water flow changes slow. The controller has to maintain
+            stable voltage output as either source comes online or drops out. I tuned
+            the PID gains iteratively against simulated load profiles before
+            validating on the physical rig.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">03</span>
+          <h3>ADC saturation handling</h3>
+          <p>
+            Arduino ADCs saturate at rail voltages. If the PID integrator keeps
+            winding up when the signal is pegged high or low, recovery takes too
+            long when conditions normalize. I added software bounds checking on
+            the feedback input so the controller doesn't integrate against a
+            saturated signal.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">04</span>
+          <h3>Hall effect + voltage divider feedback</h3>
+          <p>
+            Hall sensors measure alternator output current without needing a
+            shunt in the power path — cleaner and safer at higher currents.
+            A voltage divider network scales the 12V output down to the
+            0–5V Arduino ADC range. Both feed into the PID loop simultaneously.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- RESULTS / CURRENT STATUS -->
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Status</div>
+      <h2 class="section-title">Where it stands.</h2>
+
+      <!-- CHANGE: Update stats below as the project progresses -->
+      <div class="stat-row">
+        <div>
+          <div class="stat-big">±5%</div>
+          <div class="stat-caption">Target voltage regulation under step-change loads</div>
+        </div>
+        <div>
+          <div class="stat-big">12V</div>
+          <div class="stat-caption">Nominal output from shared alternator</div>
+        </div>
+        <div>
+          <div class="stat-big">20 ft</div>
+          <div class="stat-caption">Elevated tank height for PHS head pressure</div>
+        </div>
+      </div>
+
+      <div class="section-body">
+        <!-- CHANGE: Update this once you have test data -->
+        <p>
+          Final integration and commissioning run through spring quarter 2026.
+          Project wraps at the end of May with a final presentation and report.
+          Test data and final results will be added here once validated.
+        </p>
+      </div>
+
+      <!-- CHANGE: Add a photo of the system or test setup -->
+      <div class="image-single">
+        <img
+          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=675&fit=crop"
+          alt="Test setup or system integration"
+        >
+        <!-- This caption sits outside the image frame — update to describe the photo -->
+      </div>
+      <div class="image-caption">Placeholder image — replace with system integration photo or CAD render.</div>
+    </div>
+  </section>
+
+
+  <!-- PROJECT FOOTER -->
+  <footer class="project-footer">
+    <div class="container-narrow">
+      <div class="project-footer-grid">
+        <a href="jn4.html" class="footer-prev">
+          <span class="footer-nav-label">← Previous</span>
+          <span class="footer-nav-title">Curtiss JN-4 Fuselage</span>
+        </a>
+        <a href="fsae.html" class="footer-next">
+          <span class="footer-nav-label">Next →</span>
+          <span class="footer-nav-title">FSAE Electric Powertrain</span>
+        </a>
+      </div>
+    </div>
+    <div class="back-to-all">
+      <a href="../index.html#projects">View all projects</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSAE Electric Powertrain — Tristan Zabala</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to portfolio
+      </a>
+      <a href="../index.html" class="nav-logo"><span>&gt;</span> tristan_zabala</a>
+    </div>
+  </nav>
+
+
+  <section class="project-hero">
+    <div class="container-narrow">
+      <div class="project-tags">
+        <span class="project-tag">SolidWorks</span>
+        <span class="project-tag">ANSYS FEA</span>
+        <span class="project-tag">GD&amp;T</span>
+        <span class="project-tag">DFM</span>
+        <span class="project-tag">Electric Drivetrain</span>
+      </div>
+
+      <h1 class="project-title">FSAE Electric <em>Powertrain</em></h1>
+
+      <p class="project-summary">
+        Designed and validated the motor and differential mounts for a
+        220 N·m electric drivetrain — from CAD through FEA to test-bench
+        validation.
+      </p>
+    </div>
+
+    <div class="container-narrow">
+      <div class="hero-image-wrapper">
+        <!-- CHANGE: Replace with a photo of the FSAE car, the powertrain
+             assembly, or a SolidWorks render of the mounts. -->
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&h=675&fit=crop"
+          alt="FSAE electric powertrain"
+          class="hero-image"
+        >
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-narrow">
+    <div class="info-strip">
+      <div class="info-strip-grid">
+        <div>
+          <div class="info-item-label">Duration</div>
+          <div class="info-item-value">Mar 2024</div>
+          <div class="info-item-sub">— Dec 2024 (9 months)</div>
+        </div>
+        <div>
+          <div class="info-item-label">My Role</div>
+          <div class="info-item-value">Powertrain Engineer</div>
+          <div class="info-item-sub">Mounts, FEA, drivetrain</div>
+        </div>
+        <div>
+          <div class="info-item-label">Team</div>
+          <div class="info-item-value">FSAE Team</div>
+          <div class="info-item-sub">UCI Formula SAE</div>
+        </div>
+        <div>
+          <div class="info-item-label">Tools</div>
+          <div class="info-item-value">SolidWorks</div>
+          <div class="info-item-sub">ANSYS, GD&amp;T, test bench</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Overview</div>
+      <h2 class="section-title">A powertrain that has to survive a racecar.</h2>
+
+      <div class="section-body">
+        <p class="lead">
+          FSAE (Formula SAE) is a collegiate engineering competition where
+          students design, build, and race open-wheel formula-style vehicles.
+          UCI's team runs an electric platform.
+        </p>
+        <p>
+          The powertrain subteam is responsible for everything between the
+          motor output and the wheels — mounting the motor, mounting the
+          differential, sizing the final drive, and making sure it all
+          survives the repetitive vibratory and torque loads of a racecar.
+        </p>
+        <p>
+          I joined as a Powertrain Engineer with responsibility for the
+          mount design, FEA validation, gear ratio selection, and test-bench
+          verification. The constraint was tight: mounts had to hold a 220 N·m
+          drivetrain under dynamic loading while fitting inside the chassis
+          packaging envelope — all designed for outsourced machining.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="background: var(--bg-card); margin: 0 -100vw; padding-left: 100vw; padding-right: 100vw;">
+    <div class="container-narrow">
+      <div class="section-label">My Contribution</div>
+      <h2 class="section-title">What I owned on the project.</h2>
+
+      <div class="section-body">
+        <ul>
+          <li><strong>Motor and differential mount design.</strong> CAD in
+            SolidWorks, working from the motor and diff datasheets, chassis
+            envelope constraints, and packaging coordination with the chassis
+            subteam.</li>
+          <li><strong>Structural validation.</strong> ANSYS FEA for static
+            stress, torque loading, and vibratory/fatigue loads.
+            Target: &gt;1.5× safety factor on all load cases.</li>
+          <li><strong>Final drive gear ratio.</strong> Selected a 3.3:1 ratio
+            based on motor torque curve, target top speed, tire slip limits,
+            and the available sprocket sizes that fit the packaging.</li>
+          <li><strong>GD&amp;T and DFM.</strong> Applied geometric tolerancing
+            to all mount drawings so outsourced vendors could machine parts
+            that actually fit on first articles — no in-house rework.</li>
+          <li><strong>Test bench validation.</strong> Built a welded test fixture
+            to load the assembled mounts under simulated operating conditions
+            before the powertrain saw the car.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Technical Highlights</div>
+      <h2 class="section-title">Key engineering decisions.</h2>
+
+      <div class="highlight-list">
+
+        <div class="highlight-card">
+          <span class="highlight-number">01</span>
+          <h3>Targeting &gt;1.5× safety factor across load cases</h3>
+          <p>
+            The mounts had to survive three very different load environments:
+            static (holding the drivetrain weight), peak torque (220 N·m through
+            the diff), and vibratory (cycle loading from the motor and road input).
+            I ran each case independently in ANSYS and iterated the geometry
+            until the lowest safety factor across all three crossed 1.5.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">02</span>
+          <h3>3.3:1 gear ratio for slip-limited acceleration</h3>
+          <p>
+            Lower ratios give you higher top speed. Higher ratios give you more
+            torque at the tires. The ceiling isn't motor output — it's tire
+            grip. Beyond a certain tractive force, the tires slip and you stop
+            accelerating. 3.3:1 puts peak torque delivery right at the edge
+            of that slip limit, given our tire/weight package.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">03</span>
+          <h3>GD&amp;T so the parts arrive ready to assemble</h3>
+          <p>
+            Outsourced machining means you don't get a chance to iterate on
+            tolerance issues — if the bolt pattern is off by 0.5 mm because
+            the datum reference frame was ambiguous, the whole mount goes in
+            the scrap bin. Every drawing used explicit datum references,
+            position tolerance callouts, and surface profile controls on
+            the mating faces.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">04</span>
+          <h3>Test-bench validation before vehicle integration</h3>
+          <p>
+            The simulation said the mounts would hold. I didn't trust that
+            blind. I welded a test fixture that let me load the assembled
+            mounts under representative torque and confirm no visible deflection
+            or mounting bolt loosening. Every mount went through this before
+            the car saw it.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Deliverables</div>
+      <h2 class="section-title">What came out of it.</h2>
+
+      <div class="stat-row">
+        <div>
+          <div class="stat-big">220 N·m</div>
+          <div class="stat-caption">Peak drivetrain torque the mounts had to handle</div>
+        </div>
+        <div>
+          <div class="stat-big">&gt;1.5×</div>
+          <div class="stat-caption">Safety factor validated across all load cases</div>
+        </div>
+        <div>
+          <div class="stat-big">3.3:1</div>
+          <div class="stat-caption">Final drive gear ratio, optimized for tire grip</div>
+        </div>
+      </div>
+
+      <div class="section-body">
+        <p>
+          The motor and differential mounts installed first-article with no
+          rework, and held through every test-bench load cycle and on-vehicle
+          run. The powertrain assembly was fully functional.
+        </p>
+      </div>
+
+      <!-- CHANGE: Add an actual photo of the car, mounts, or FEA result -->
+      <div class="image-single">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&h=675&fit=crop"
+          alt="Powertrain assembly or FEA result"
+        >
+      </div>
+      <div class="image-caption">Placeholder — replace with photo of assembled mounts, the car, or an ANSYS contour plot.</div>
+    </div>
+  </section>
+
+
+  <footer class="project-footer">
+    <div class="container-narrow">
+      <div class="project-footer-grid">
+        <a href="capstone.html" class="footer-prev">
+          <span class="footer-nav-label">← Previous</span>
+          <span class="footer-nav-title">Hybrid Mechanical Energy Storage</span>
+        </a>
+        <a href="sccwrp.html" class="footer-next">
+          <span class="footer-nav-label">Next →</span>
+          <span class="footer-nav-title">Rainfall Simulator &amp; Analytics</span>
+        </a>
+      </div>
+    </div>
+    <div class="back-to-all">
+      <a href="../index.html#projects">View all projects</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Rainfall Simulator — Tristan Zabala</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to portfolio
+      </a>
+      <a href="../index.html" class="nav-logo"><span>&gt;</span> tristan_zabala</a>
+    </div>
+  </nav>
+
+
+  <section class="project-hero">
+    <div class="container-narrow">
+      <div class="project-tags">
+        <span class="project-tag">Sensor Systems</span>
+        <span class="project-tag">R Analytics</span>
+        <span class="project-tag">Field Testing</span>
+        <span class="project-tag">Published Research</span>
+      </div>
+
+      <h1 class="project-title">Mobile Rainfall <em>Simulator</em></h1>
+
+      <p class="project-summary">
+        Hardware and analytics for stormwater biofiltration research at
+        SCCWRP — a mobile test rig hitting 0.87 uniformity and an R
+        pipeline that replaced 30 sensors with 3.
+      </p>
+    </div>
+
+    <div class="container-narrow">
+      <div class="hero-image-wrapper">
+        <!-- CHANGE: Replace with a photo of the rainfall simulator rig
+             on site at SCCWRP or during a field test. -->
+        <img
+          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=675&fit=crop"
+          alt="Mobile rainfall simulation system"
+          class="hero-image"
+        >
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-narrow">
+    <div class="info-strip">
+      <div class="info-strip-grid">
+        <div>
+          <div class="info-item-label">Duration</div>
+          <div class="info-item-value">Dec 2023</div>
+          <div class="info-item-sub">— Dec 2025 (2 years)</div>
+        </div>
+        <div>
+          <div class="info-item-label">My Role</div>
+          <div class="info-item-value">Research Assistant</div>
+          <div class="info-item-sub">Hardware &amp; analytics</div>
+        </div>
+        <div>
+          <div class="info-item-label">Organization</div>
+          <div class="info-item-value">SCCWRP</div>
+          <div class="info-item-sub">Coastal Water Research</div>
+        </div>
+        <div>
+          <div class="info-item-label">Output</div>
+          <div class="info-item-value">ES&amp;T Water</div>
+          <div class="info-item-sub">Co-author, 2025 paper</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Overview</div>
+      <h2 class="section-title">Why stormwater biofiltration matters.</h2>
+
+      <div class="section-body">
+        <p class="lead">
+          Every time it rains, urban runoff carries pollutants — heavy
+          metals, PFAS compounds, sediment — off streets and parking lots
+          into coastal waters. Biofiltration media (engineered soils, sand,
+          carbon blends) are designed to trap those pollutants before they
+          reach the ocean.
+        </p>
+        <p>
+          The question for stormwater engineers is: which media actually
+          works, and for how long? Different media trap different pollutants
+          at different rates, then eventually saturate. SCCWRP's research
+          exists to quantify those tradeoffs so cities can pick the right
+          media for their water chemistry and budget.
+        </p>
+        <p>
+          My work at SCCWRP spanned both sides of that: the hardware to
+          produce repeatable rain for field tests, and the analytics to
+          make sense of the sensor data that came out of those tests.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="background: var(--bg-card); margin: 0 -100vw; padding-left: 100vw; padding-right: 100vw;">
+    <div class="container-narrow">
+      <div class="section-label">My Contribution</div>
+      <h2 class="section-title">Hardware, analytics, and a paper.</h2>
+
+      <div class="section-body">
+        <ul>
+          <li><strong>Mobile rainfall simulator.</strong> Designed and
+            calibrated the physical test rig. Target spec: a 0.87 uniformity
+            coefficient — meaning water distribution across the test area is
+            within 13% of the mean at every point. Achieved across soil,
+            pavement, grass, and turf surfaces.</li>
+          <li><strong>R analytics pipeline.</strong> Transformed multi-sensor
+            storm-event data into infiltration rate and uniformity metrics.
+            Showed that a 3-sensor setup captured the same trends as a
+            30-sensor array — cutting setup complexity and cost without
+            sacrificing signal.</li>
+          <li><strong>Breakthrough curve analysis.</strong> Analyzed how
+            copper and PFAS/PFOA broke through different media types,
+            quantifying exhaustion profiles and cost-to-performance
+            tradeoffs for BMP media selection.</li>
+          <li><strong>SOP authoring.</strong> Wrote standard operating
+            procedures for infiltration and adsorption testing that were
+            adopted by regional stormwater agencies.</li>
+          <li><strong>Publication.</strong> Co-author on "Impact of Media
+            Properties on Dissolved Copper Sorption in Stormwater
+            Biofiltration," ES&amp;T Water (2025).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Technical Highlights</div>
+      <h2 class="section-title">Key engineering decisions.</h2>
+
+      <div class="highlight-list">
+
+        <div class="highlight-card">
+          <span class="highlight-number">01</span>
+          <h3>Achieving 0.87 uniformity across mixed surfaces</h3>
+          <p>
+            Uniformity coefficient is the key quality metric for a rainfall
+            simulator — if water falls harder on one side of the test plot,
+            your runoff data is biased. Getting to 0.87 across soil, pavement,
+            grass, and turf required calibrating nozzle pressure, height,
+            and spacing for each surface's surface roughness and absorption
+            behavior.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">02</span>
+          <h3>30 sensors → 3 sensors, same signal</h3>
+          <p>
+            Early field tests used ~30 sensors per plot to capture spatial
+            variation in infiltration. Setup took hours. I built an R pipeline
+            that cross-correlated the readings across every sensor position
+            and identified 3 representative locations that captured the same
+            trends as the full array. Field setup dropped from half a day to
+            under an hour with no loss of resolution on the metrics we care about.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-number">03</span>
+          <h3>Breakthrough curves for media selection</h3>
+          <p>
+            Every media type has a saturation point — the moment it stops
+            trapping a pollutant and starts letting it through. Breakthrough
+            curves tell you when that happens and at what concentration.
+            Analyzed these across several media types for both copper and
+            PFAS/PFOA, which gave SCCWRP a quantitative basis for
+            recommending media to stormwater agencies.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="section-label">Impact</div>
+      <h2 class="section-title">What came out of the work.</h2>
+
+      <div class="stat-row">
+        <div>
+          <div class="stat-big">0.87</div>
+          <div class="stat-caption">Uniformity coefficient achieved on the rainfall simulator</div>
+        </div>
+        <div>
+          <div class="stat-big">90%</div>
+          <div class="stat-caption">Reduction in required sensors (30 → 3) with equivalent signal</div>
+        </div>
+        <div>
+          <div class="stat-big">2025</div>
+          <div class="stat-caption">Peer-reviewed publication in ES&amp;T Water as co-author</div>
+        </div>
+      </div>
+
+      <div class="section-body">
+        <p>
+          The SOPs I authored were adopted by regional stormwater agencies
+          for their own infiltration and adsorption testing. The paper is
+          publicly available in ES&amp;T Water (2025): "Impact of Media
+          Properties on Dissolved Copper Sorption in Stormwater Biofiltration."
+        </p>
+      </div>
+
+      <!-- CHANGE: Add a photo of the rig or a data visualization -->
+      <div class="image-single">
+        <img
+          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=675&fit=crop"
+          alt="Field test setup"
+        >
+      </div>
+      <div class="image-caption">Placeholder — replace with photo of the simulator rig in the field or a data visualization from the R pipeline.</div>
+    </div>
+  </section>
+
+
+  <footer class="project-footer">
+    <div class="container-narrow">
+      <div class="project-footer-grid">
+        <a href="fsae.html" class="footer-prev">
+          <span class="footer-nav-label">← Previous</span>
+          <span class="footer-nav-title">FSAE Electric Powertrain</span>
+        </a>
+        <a href="jn4.html" class="footer-next">
+          <span class="footer-nav-label">Next →</span>
+          <span class="footer-nav-title">Curtiss JN-4 Fuselage</span>
+        </a>
+      </div>
+    </div>
+    <div class="back-to-all">
+      <a href="../index.html#projects">View all projects</a>
+    </div>
+  </footer>
+
+</body>
+</html>
